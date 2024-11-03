@@ -1,0 +1,216 @@
+style.css body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  padding-right: 40px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width: 105%;
+  padding: 10px;
+  background-color: #b6252a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b6252a;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  margin: 10px;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.menu a {
+  padding: 10px 20px;
+  background-color: #b6252a;
+  color: white;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.menu a:hover {
+  background-color: #b6252a;
+}
+
+.notification {
+  position: fixed; /* Position it fixed for pop-up effect */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the notification */
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000; /* Ensure it appears above other content */
+  display: none; /* Hide by default */
+  text-align: center;
+  animation: fadeIn 0.5s; /* Add fade-in effect */
+}
+
+.notification.success {
+  background-color: #b6252a; /* Green background for success */
+  color: white;
+}
+
+.notification.error {
+  background-color: #f44336; /* Red background for error */
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Show notification when it has content */
+.notification.show {
+  display: block;
+}
+
+nav {
+  background-color: #b6252a; /* Background color for the nav */
+  padding: 10px 0;
+}
+
+nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Align items in a row with space in between */
+  align-items: center; /* Center items vertically */
+}
+
+nav h2 {
+  color: white;
+}
+
+nav ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display links in a row */
+}
+
+nav ul li {
+  margin-left: 20px; /* Space between each item */
+}
+
+nav ul li a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 5px 10px; /* Padding for clickable area */
+  border-radius: 4px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+  background-color: #b6252a; /* Change background on hover */
+}
+
+.scholarship-section {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.scholarship-section h2 {
+  text-align: center;
+  color: #333;
+}
+
+.scholarship-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.scholarship-section li {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.scholarship-section li h4 {
+  color: #b6252a; /* Green color for scholarship titles */
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.requirements {
+  max-height: 0; /* Set max-height to 0 to hide */
+  overflow: hidden; /* Prevent content overflow */
+  transition: max-height 0.5s ease-out; /* Smooth transition */
+}
+.requirements.show {
+  max-height: 200px; /* Set a suitable max-height when shown */
+}
+.btn-detail {
+  background-color: #b6252a; /* Gray color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+}
+
+.bg-custom {
+  background-color: #b6252a; /* Contoh warna hijau */
+}
