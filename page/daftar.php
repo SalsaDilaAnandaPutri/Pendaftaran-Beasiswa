@@ -10,7 +10,7 @@ if(isset($_POST['submit'])) {
     $nomorhp = $_POST['noHp']; 
     $semester = $_POST['semester'];
     $ipk = $_POST['last_ipk']; 
-    $beasiswa = $_POST['beasiswa'];
+    $beasiswa = isset($_POST['beasiswa']) ? $_POST['beasiswa'] : '';
 
     // Mengambil informasi file yang diupload
     $berkas = $_FILES['berkas']['name'];
@@ -27,7 +27,7 @@ if(isset($_POST['submit'])) {
     $status = '0';
 
     // Mengecek input kosong
-    if($nama == '' || $email == '' || $nomorhp == '' || $semester == '' || $ipk == '' || $berkas == '') {
+    if($nama == '' || $email == '' || $nomorhp == '' || $semester == '' || $ipk == '' || $beasiswa == '' || $berkas == '') {
         echo "<script>alert('Semua kolom harus diisi')</script>";
     } else {
         // Validasi jenis beasiswa
